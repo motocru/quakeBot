@@ -1,0 +1,12 @@
+{
+    "name": "quake-bot",
+    "version": "1.0.0",
+    "description": "test Discord bot",
+    "main": "bot.js",
+    "author": "Motocru",
+    "dependencies": {
+        "discord.io": "github:izy521/discord.io",
+        "request": "^2.88.0",
+        "winston": "^3.1.0"
+    }
+}
