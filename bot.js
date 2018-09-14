@@ -34,12 +34,17 @@ bot.on('message', function(user, userID,channelID, message, evt) {
         if (args.length > 2) {
             for (var i = 1; i < args.length; i++) {
                 name += args[i];
-                if (i != args.length-1) {
-                    name += ' ';
+                //adds %20 to name if it ends in an underscore
+                if (i != args.length-1 && args[i].substring(args[i].length-1) != '_') {
+                    name += '%20';
                 }
             }
         } else {
             name = args[1];
+            //adds %20 to a name if it ends in an underscore
+            if (args[1].substring(args[1].length -1) == '_') {
+                name += '%20';
+            }
         }
 
         /**Large switch statement to go over the multiple input options.
