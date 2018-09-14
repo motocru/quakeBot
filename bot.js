@@ -230,6 +230,7 @@ function accuracyCalculator(weapon, userObject, weaponName, cb) {
     cb(`${weaponName} accuracy for ${userObject.name} = ${Math.round((gunHits/gunShots)*1000)/10}%`);
 }
 
+/**function will grab the ELOL rating for the specified mode and return */
 function EloGrab(mode, userObject, cb) {
     //userObject.playerRatings[mode].rating;
     cb(userObject.playerRatings[mode].rating);
