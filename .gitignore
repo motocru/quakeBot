@@ -1,0 +1,4 @@
+#removing authorization and node_modules based items here
+node_modules/
+auth.json
+

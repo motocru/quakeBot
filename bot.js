@@ -198,7 +198,7 @@ function userGrab(weapon, user, weaponName, cb) {
                 delete json.matches;
                 if (weapon === 'duel' || weapon === 'tdm') {
                     EloGrab(weapon, json, function(res) {
-                        cb(`User, ${user}, ${weaponName} ranking: ${res}`);
+                        cb(`User, ${json.name}, ${weaponName} ranking: ${res}`);
                     });
                 } else {
                     accuracyCalculator(weapon, json, weaponName, function(res) {
